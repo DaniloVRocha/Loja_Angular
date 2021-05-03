@@ -1,0 +1,53 @@
+{
+  "clientes": [
+    {
+      "nome": "DANILO VIEIRA ROCHA",
+      "email": "danilorocha722@gmail.com",
+      "rg": 777777,
+      "id": 1
+    },
+    {
+      "nome": "João Antonio",
+      "rg": 741852,
+      "email": "joao@hotmail.com",
+      "id": 2
+    },
+    {
+      "nome": "Lucas Magalhães",
+      "rg": 523659,
+      "email": "lucas@gmail.com",
+      "id": 3
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "modelo": "GeForce GTX",
+      "url": "/assets/images/video.jpg",
+      "marca": "Nvidia",
+      "preco": "R$ 2.999,00"
+    },
+    {
+      "id": 2,
+      "modelo": "Processador i9",
+      "url": "/assets/images/i9processador.jpg",
+      "marca": "Intel",
+      "preco": "R$ 1.999,00"
+    },
+    {
+      "id": 3,
+      "modelo": "Processador i5",
+      "url": "/assets/images/i5processador.jpg",
+      "marca": "Intel",
+      "preco": "R$ 1.399,00"
+    },
+    {
+      "id": 4,
+      "modelo": "Gabinete",
+      "url": "/assets/images/gabinete.jpg",
+      "marca": "Intel",
+      "preco": "R$ 399,00"
+    }
+
+  ]
+}

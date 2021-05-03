@@ -1,0 +1,40 @@
+<div ng-controller="CarrinhoController as carrinho">
+
+
+<div class="col" ng-init="vm.init()" ng-controller='ProdutosController as vm'>
+  <div class="card-group" ng-if="vm.produtos">
+
+    <div class="card" ng-repeat = "produto in vm.produtos">
+      <img src={{produto.url}}>
+      <div class="card-body" >
+        <h5 class="card-title">{{produto.modelo}}</h5>
+        <p class="card-text"></p>
+        <button type="button" class="btn btn-success" ng-click="carrinho.adicionarCarrinho(produto)">Adicionar ao Carrinho<br>{{produto.preco}}</button>
+        <p class="card-text"><small class="text-muted">EM ESTOQUE</small></p>
+        <br>
+      </div>
+
+    </div>
+<div class="col">
+  <ul class="list-group" ng-controller="CarrinhoController as carrinho">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Meu Carrinho
+      <span class="badge badge-primary badge-pill">{{carrinho.produtosNoCarrinho.length}}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center" ng-repeat="produto in carrinho.produtosNoCarrinho track by $index">
+      {{produto.modelo}}, {{produto.preco}}
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Total: {{carrinho.calcularTotal()}}
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <button type="button" class="btn btn-success" ng-click="carrinho.finalizarCompra()">Finalizar Compra</button> <button type="button" class="btn btn-danger" ng-click="carrinho.limparCarrinho()">Limpar Carrinho</button>
+    </li>
+  </ul>
+</div>
+</div>
+
+
+    
+</div>
+</div>

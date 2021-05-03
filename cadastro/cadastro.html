@@ -1,0 +1,23 @@
+
+<div class="container" ng-controller="CadastroController as vm">
+  <h1>{{vm.texto}}</h1>
+<form>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Nome</label>
+      <input type="text" class="form-control" id="nome" ng-model="vm.cliente.nome" placeholder="Nome do Cliente">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">RG:</label>
+      <input type="number" class="form-control" id="rg" ng-model="vm.cliente.rg" placeholder="RG Cliente">
+
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">E-mail:</label>
+      <input type="text" class="form-control" id="email" ng-model="vm.cliente.email" placeholder="Email">
+
+    </div>
+
+    <button type="button" class="btn btn-primary" ng-click="vm.cadastrar()">{{vm.textoBotao}}</button>
+    <button type="button" class="btn btn-danger" ng-click="vm.limpar()">Limpar</button>
+  </form>
+</div>
